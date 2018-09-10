@@ -1,10 +1,11 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="ko">
 <head>
     <title> HTML5 SVG & MathML 예제 </title> 
     <meta charset="utf-8"/>
-    <meta authors="임순범 박희민"> 
-    <meta copyright="본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음"> 
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <meta name="author" content="임순범 박희민"/> 
+    <meta name="copyright" content="본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음"/> 
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
     <h3>HTML 문서 내에 canvas, svg, MathML이 포함</h3>
@@ -12,7 +13,7 @@
 	   벡터그래픽은 svg로 표현되고, 비트맵그래픽은 canvas로 표현된다</p>
 	<p>canvas 예제는
 	<canvas id="mySample" width="80" height="80"> </canvas>
-    <script type="text/javascript">
+    <script>
 	    var canvas = document.getElementById("mySample"); 
 	    var context = canvas.getContext("2d");  
 		context.rect(0,0,80,80); 
